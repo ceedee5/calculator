@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+
+
+</head>
+<body>
+
+    <div class="calc">
+        <div class="display">
+            <p class="output">DISPLAY</p>
+        </div>
+
+        <div class="buttons">
+            <div class="fir">
+                <div class="AC">AC</div>
+                <div class="plusminus"id ="box">+/-</div>
+                <div class="divide"id ="box">/</div>
+            </div>
+            <div class="sec">
+                <div class="seven"id ="box">7</div>
+                <div class="eight"id ="box">8</div>
+                <div class="nine"id ="box">9</div>
+                <div class="times"id ="box">X</div>
+            </div>    
+            <div class="third">
+                <div class="four" id ="box">4</div>
+                <div class="five" id ="box">5</div>
+                <div class="six" id ="box">6</div>
+                <div class="minus" id ="box">-</div>
+            </div>
+            <div class="four">
+                <div class="1" id ="box">1</div>
+                <div class="2"id ="box">2</div>
+                <div class="3" id ="box">3</div>
+                <div class="plus" id ="box">+</div>
+            </div>
+            <div class="fif">
+                <div class="zero" >0</div>
+                <div class="dot" id ="box">.</div>
+                <div class="equals"id ="box">=</div>
+            </div>
+        </div>  
+        
+    </div>
+
+    <script>
+        function onload(){
+            const output = document.querySelector('.output')
+            const boxes = document.querySelectorAll("#box");
+            
+            boxes.forEach((box)=>{
+            
+            box.onclick= function() {click()};
+            
+                function click() {
+                output.textContent= box.innerHTML;
+                
+                };
+            
+            });
+        }
+    
+        onload();
+            
+        </script>
+
+</body>
+</html>

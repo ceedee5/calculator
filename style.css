@@ -1,0 +1,61 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+}
+
+.calc {
+    background-color:grey;
+    width: 400px;
+    height:504px;
+    display:flex;
+    flex-direction: column;
+}
+
+.display, .fir , .sec, .third, .four, .fif {
+    width:399px;
+    height: 84px;
+    display: flex;
+    flex-direction: row;
+}
+
+.AC , .zero {
+    height:83px;
+    width: 199px;
+    display: flex;
+align-items: center;
+justify-content: center;
+border: .5px solid black;
+
+ 
+}
+
+
+#box {
+    height:83px;
+    width: 99px;
+    display: flex;
+align-items: center;
+justify-content: center;
+border: .5px solid black;
+
+ 
+}
+
+.display {
+    display: flex;
+    justify-content: flex-end ;
+    align-items: center;
+   background-color: rgb(177, 176, 176);
+}
+
+.output {
+    padding:20px
+}
+
+.divide, .times , .minus ,.plus , .equals {
+    background-color: orange;
+}
+
+.AC, .plusminus{
+    background-color: rgb(95, 95, 95);
+}
